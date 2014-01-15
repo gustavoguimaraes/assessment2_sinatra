@@ -1,0 +1,7 @@
+= haml :errors, :layout => false
+%form(action="/spacecats/#{@spacecat.id}" method="POST")
+  %input(type="hidden" name="_method" value="PUT")
+  %fieldset
+    %legend Update this spacecat
+    = haml :form, :layout => false
+  %input(type="submit" value="Update") or <a href='/spacecats'>cancel</a>

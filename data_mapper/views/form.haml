@@ -1,0 +1,14 @@
+%label(for="name")Name:
+%input#name(type="text" name="spacecat[name]"value="#{@spacecat.name}")
+
+%label(for="homeplanet")Homeplanet:
+%textarea#homeplanet(name="spacecat[homeplanet]")
+  =@spacecat.homeplanet
+    
+%label(for="tagline") tagline:
+%textarea#tagline(name="spacecat[tagline]")
+  =@spacecat.tagline
+  
+%label(for="superpower") Superpower:
+%textarea#superpower(name="spacecat[superpower]")
+  =@spacecat.superpower

@@ -1,0 +1,82 @@
+
+1. Create the databse in SQL Pro
+
+2. 
+create table wizards
+(id integer primary key auto_increment,
+name text,
+age integer
+);
+
+3.
+select * from wizards;
+ 0 wizard
+
+4. insert into wizards (name, age) values
+("Bruxa", 234);
+
+5. 
+select count(name) from wizards;
+There are 1 wizard.
+
+6. 
+ insert into wizards (name, age) values
+ ("Bubu", 678);
+
+ 7. 
+ update wizards
+ set age = 21
+ where id = 2;
+
+ 8.
+ update wizards
+ set age = 40;
+
+ 9.
+ delete from wizards
+ where id = 2;
+
+ 10.
+  delete from wizards;
+
+
+11.
+
+create table wizards(
+id integer primary key auto_increment,
+name text,
+age integer,
+);
+
+create table powers (
+id integer primary key auto_increment,
+name text,
+damage integer,
+wizard_id integer
+);
+
+12.
+
+select *
+from wizards
+join powers on powers.wizard_id = wizards.id
+where powers.name like 'l%';
+
+13.
+select wizards.name, sum(powers.damage) as total_damage
+from wizards
+join powers on powers.wizard_id = wizards.id
+where powers.damage = 10;
+
+14.
+
+select wizards.name, sum(powers.damage) as total_damage
+from wizards
+join powers on powers.wizard_id = wizards.id
+where powers.damage = 10
+order by damage;
+
+15.
+
+insert into wizards (name, age)
+values ("gand", 45);

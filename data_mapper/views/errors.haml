@@ -1,0 +1,4 @@
+-if @spacecat.errors.any?
+  %ul#errors
+  -@spacecat.errors.each do |error|
+    %li= error

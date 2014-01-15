@@ -1,0 +1,9 @@
+%h3= @spacecat.name
+%p Homeplanet: #{@spacecat.homeplanet}
+%p Tagline: #{@spacecat.tagline}
+%p Superpower: #{@spacecat.superpower}
+%p Created at: #{@spacecat.created_at}
+%p Last updated at: #{@spacecat.updated_at}
+%a(href="/spacecats/edit/#{@spacecat.id}")EDIT
+%a(href="/spacecats/delete/#{@spacecat.id}")DELETE
+%a(href='/spacecats') Back to index
