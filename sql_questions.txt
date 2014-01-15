@@ -80,3 +80,12 @@ order by damage;
 
 insert into wizards (name, age)
 values ("gand", 45);
+
+16.
+
+16.
+
+select wizards.name, sum(powers.damage) as total_damage
+from wizards
+join powers on powers.wizard_id = wizards.id
+where powers.damage = null;
