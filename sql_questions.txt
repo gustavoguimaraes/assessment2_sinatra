@@ -8,6 +8,7 @@ name text,
 age integer
 );
 
+
 3.
 select * from wizards;
  0 wizard
@@ -81,7 +82,6 @@ order by damage;
 insert into wizards (name, age)
 values ("gand", 45);
 
-16.
 
 16.
 
